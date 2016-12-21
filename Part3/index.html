@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> To Do List</title>
+        <link rel="stylesheet" href="style.css">
+        <script type= "text/javascript" src = "jquery-3.1.1.js"></script>
+        <script type= "text/javascript" src = "part 3.js"></script>
+    </head>
+<body>
+    <div class="toDoDiv">
+        <p>
+            <input type="text" id="inputToDO" class="textinput" placeholder="New to do ... " />
+            <button id="addBtn" class="btnSend" onclick= "input()"> Add</button>
+        </p>
+        <h1>Things to do before the immersive:</h1>
+        <ul>
+        </ul>
+    
+    </div>
+    <script> function input(){
+    var str = document.getElementsByClassName("textinput")[0].value;
+    $("ul").text(str);
+}    </script>
+</body>
+</html>
